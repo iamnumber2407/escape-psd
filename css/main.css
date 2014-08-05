@@ -1,0 +1,505 @@
+﻿/*STYLESHEETS*/
+@import url('bootstrap.min.css');
+@import url('../font-awesome/css/font-awesome.min.css');
+
+@font-face {
+    font-family: cubano-regular-webfont;
+    src: url(../font/cubano-regular-webfont.ttf);
+}
+
+@font-face {
+    font-family: brandon-light;
+    src: url(../font/brandon-light.otf);
+}
+
+@font-face {
+    font-family: brandon-bold;
+    src: url(../font/brandon-bold.otf);
+}
+
+@font-face {
+    font-family: brandon-reg;
+    src: url(../font/brandon-reg.otf);
+}
+
+@font-face {
+    font-family: brandon-med;
+    src: url(../font/brandon-med.otf);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main-header {
+    position: relative;
+    background: url(../img/header-bg.png) no-repeat fixed;
+    background-size: cover;
+    min-width: 100%;
+    height: 550px;
+    color: #fff;
+}
+
+.bg-overlay {
+    background: rgba(20, 0, 0, 0.4);
+    min-height: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 13px;
+    left: 40%;
+}
+
+    .logo i {
+        font-size: 1.7em;
+        color: #fff;
+        display: inline-block;
+    }
+
+.logo-text {
+    font-family: cubano-regular-webfont;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    display: inline-block;
+    padding-left: 4px;
+}
+
+.main-nav {
+    position: absolute;
+    top: 38px;
+    left: 31%;
+    font-family: 'Myriad Pro';
+    font-size: 1.1em;
+}
+
+    .main-nav li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+        .main-nav li a {
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+.header-message {
+    text-align: center;
+    margin-top: 200px;
+}
+
+    .header-message h2 {
+        font-family: brandon-light;
+        font-size: 2em;
+    }
+
+    .header-message h3 {
+        font-family: brandon-bold;
+        font-size: 4em;
+        text-transform: uppercase;
+        padding: 10px 0 50px;
+    }
+
+    .header-message button {
+        font-family: brandon-bold;
+        font-size: 1.3em;
+        color: #fff;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 3px;
+        padding: 13px 50px;
+    }
+
+
+.services h1 {
+    font-family: brandon-reg;
+    font-size: 3.5em;
+    padding-bottom: 10px;
+}
+
+.services p {
+    font-family: brandon-reg;
+    font-size: 1em;
+}
+
+.services-img-wrap {
+    position: relative;
+}
+
+.first-service {
+    padding: 70px 5%;
+}
+
+    .first-service p {
+        width: 85%;
+        line-height: 21px;
+    }
+
+    .first-service img {
+        width: 53%;
+        position: absolute;
+        top: 35px;
+        left: -18%;
+    }
+
+
+.second-service {
+    background: #fafafa;
+    padding: 70px 5%;
+}
+
+    .second-service p {
+        width: 85%;
+        line-height: 21px;
+    }
+
+    .second-service img {
+        width: 130%;
+        position: absolute;
+        top: 30px;
+        left: -2%;
+    }
+
+.services-group {
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 75%;
+}
+
+    .services-group img {
+        width: 27px;
+        height: 27px;
+    }
+
+    .services-group h2 {
+        font-family: brandon-med;
+        font-size: 1.2em;
+    }
+
+.services-item {
+    position: relative;
+    width: 30%;
+    margin-left: 15%;
+}
+
+.circle {
+    position: absolute;
+    top: 14px;
+    left: -62px;
+    display: inline-block;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.clients {
+    padding: 50px 0 20px;
+}
+
+.clients-bg {
+    background: #fafafa;
+    padding: 65px 0 90px;
+}
+
+.clients-title {
+    text-align: center;
+}
+
+.clients h3 {
+    font-family: brandon-reg;
+    font-size: 3.5em;
+}
+
+.clients h4 {
+    font-family: brandon-light;
+    font-size: 1.3em;
+    margin-bottom: 40px;
+}
+
+.client-img-1 {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    padding-top: 9px;
+    background: url(../img/grumpy.jpg) no-repeat;
+    background-size: 200px;
+}
+
+.client-img-2 {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    padding-top: 9px;
+    background: url(../img/lilbub.jpg) no-repeat;
+    background-size: 200px;
+}
+
+blockquote {
+    border-left: none;
+    font-family: brandon-reg;
+    font-size: 1.5em;
+    padding: 20px 44px;
+}
+
+.cite {
+    color: #c7d0e5;
+    font-size: .8em;
+}
+
+/*SPEECH BUBBLE LEFT POINTER*/
+.bubble {
+    position: relative;
+    width: 67%;
+    height: 140px;
+    padding-left: 25px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    border: #F5EDED solid 1px;
+    margin: 25px;
+}
+
+    .bubble:after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 11px 15px 11px 0;
+        border-color: transparent #FFFFFF;
+        display: block;
+        width: 0;
+        z-index: 1;
+        margin-top: -11px;
+        left: -15px;
+        top: 50%;
+    }
+
+    .bubble:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 11px 15px 11px 0;
+        border-color: transparent #7F7F7F;
+        display: block;
+        width: 0;
+        z-index: 0;
+        margin-top: -11px;
+        left: -15px;
+        top: 50%;
+    }
+
+/*SPEECH BUBBLE RIGHT POINTER*/
+.bubble-right {
+    position: relative;
+    width: 67%;
+    height: 140px;
+    padding-left: 25px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    border: #F5EDED solid 1px;
+    margin: 25px 275px;
+}
+
+    .bubble-right:after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 15px 0 15px 15px;
+        border-color: transparent #FFFFFF;
+        display: block;
+        width: 0;
+        z-index: 1;
+        margin-top: -11px;
+        right: -15px;
+        top: 50%;
+    }
+
+    .bubble-right:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 15px 0 15px 15px;
+        border-color: transparent #7F7F7F;
+        display: block;
+        width: 0;
+        z-index: 0;
+        margin-top: -11px;
+        right: -15px;
+        top: 50%;
+    }
+
+.sponsor-logos {
+    padding: 50px;
+}
+
+.team {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+    font-family: brandon-light;
+}
+
+    .team p:nth-child(2) {
+        font-size: 1.3em;
+        color: #777777;
+        font-family: brandon-reg;
+    }
+
+    .team h3 {
+        font-size: 3.5em;
+    }
+
+    .team h4 {
+        font-family: brandon-bold;
+        font-size: 1.2em;
+    }
+
+    .team h5 {
+        font-size: .9em;
+    }
+
+.team-images {
+    width: 57%;
+    margin: 50px auto;
+}
+
+.team-img-1 {
+    border-radius: 100%;
+    border: 5px solid #fff;
+    width: 200px;
+    height: 200px;
+    padding-top: 9px;
+    background: url(../img/grumpy.jpg) no-repeat;
+    background-size: 200px;
+    margin: 0 auto;
+}
+
+.social-icon {
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+    border-radius: 100%;
+    font-size: 1.2em;
+    padding-top: 5px;
+}
+
+.main-footer {
+    background: #7690c5;
+    color: #fff;
+    padding-top: 50px;
+    font-family: brandon-reg;
+}
+
+    .main-footer h3 {
+        font-size: 3em;
+    }
+
+    .main-footer form {
+        width: 350px;
+    }
+
+    .main-footer input {
+        min-width: 100%;
+        height: 35px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    .main-footer textarea {
+        min-width: 100%;
+        height: 150px;
+        padding-left: 10px;
+    }
+
+    .main-footer .copyright {
+        margin-top: 50px;
+        border-top: 1px solid rgba(203, 201, 201, 0.29);
+        text-align: center;
+        padding: 30px 0;
+    }
+
+.footer-items {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.footer-icons {
+    font-size: 1.3em;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-info {
+    display: inline-block;
+}
+
+/*media queries*/
+
+/*@media (min-width: 1200px) {
+}*/
+
+/*@media (min-width: 992px) and (max-width: 1199px) {
+}*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-nav {
+        position: absolute;
+        top: 70px;
+        left: 22%;
+        font-family: 'Myriad Pro';
+        font-size: 1.1em;
+    }
+
+    .first-service img {
+        width: 75%;
+        position: absolute;
+        top: 65px;
+        left: -10%;
+    }
+
+    .second-service img {
+        width: 140%;
+        position: absolute;
+        top: 63px;
+        left: -2%;
+    }
+
+    .services-item {
+        position: relative;
+        width: 30%;
+        margin-left: 18%;
+    }
+
+    .services-group {
+        padding: 50px 0;
+        margin: 0 auto;
+    }
+
+    .bubble {
+        width: 80%;
+        height: 140px;
+        margin: 35px 0 0 70px;
+    }
+
+    .bubble-right {
+        height: 140px;
+        padding-left: 25px;
+        margin: 25px 100px;
+        width: 83%;
+    }
+
+    blockquote {
+        font-size: 1.3em;
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 480px) {
+}
